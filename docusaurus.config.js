@@ -1,7 +1,7 @@
 module.exports = {
   title: 'osueasy',
   tagline: 'Easy osu bancho interfacing',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://osueasy.netlify.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Anton1337', // Usually your GitHub org/user name.

@@ -32,7 +32,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        osueasy is entirely written in typescript using an Object Oriented
+        osueasy is entirely written in typescript using an object oriented
         programming approach for a solid code architecture.
       </>
     ),

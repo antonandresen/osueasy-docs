@@ -13,8 +13,7 @@ const features = [
     description: (
       <>
         osueasy was designed to be as beginner friendly as possible, so that
-        someone that is new to coding can get their own bancho bot up and
-        running.
+        someone that is new to coding can get a bancho bot up and running.
       </>
     ),
   },

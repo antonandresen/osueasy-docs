@@ -12,8 +12,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        osueasy was designed to be as beginner friendly as possible, so that
+        someone that is new to coding can get their own bancho bot up and
+        running.
       </>
     ),
   },
@@ -22,29 +23,29 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        osueasy&apos;s api is very high level, and highly focused on specific
+        tasks, which makes it very easy to understand.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>Powered by OOP & Typescript</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        osueasy is entirely written in typescript using an Object Oriented
+        programming approach for a solid code architecture.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
-        <div className="text--center">
+        <div className='text--center'>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
@@ -56,22 +57,24 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description='Description will go into a meta tag in <head />'
+    >
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className='container'>
+          <h1 className='hero__title'>{siteConfig.title}</h1>
+          <p className='hero__subtitle'>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
                 'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                styles.getStarted
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs/')}
+            >
               Get Started
             </Link>
           </div>
@@ -80,8 +83,8 @@ function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container">
-              <div className="row">
+            <div className='container'>
+              <div className='row'>
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}

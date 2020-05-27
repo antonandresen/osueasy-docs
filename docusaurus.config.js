@@ -20,9 +20,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Anton1337/osueasy',
           label: 'GitHub',
           position: 'right',
         },
@@ -65,12 +64,12 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Author',
+              href: 'https://anton.best/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Anton1337/osueasy',
             },
           ],
         },
@@ -84,11 +83,10 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'markdown',
+          homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/Anton1337/osueasy-docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
